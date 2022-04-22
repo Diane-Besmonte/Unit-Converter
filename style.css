@@ -105,20 +105,21 @@ footer {
 
 /* Responsiveness */
 
-/* @media only screen and (min-width: 577px)  {
-
-} */
-
 @media screen and (max-width: 576px) {
     .insert h1 {
         font-size: 1.1rem;
     }
 
-    input[type=number] {
-        padding: 0.2em 0.3em;
-        width: 100%;
+    .insert {
+        padding: 0.3em 1.7em;
     }
-    
+
+    input[type=number] {
+        padding: 0 0.3em;
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
     #card {
         width: 80%;
     }
@@ -137,5 +138,45 @@ footer {
         font-family: var(--prgph);
         font-weight: 600;
         padding: 0.4em 0 0.6em 0;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .insert h1 {
+        font-size: 0.7rem;
+    }
+
+    .insert {
+        padding: 0.3em 1.5em;
+    }
+
+    input[type=number] {
+        padding: 0 0.1em;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .calculation {
+        padding: 1.1em 0.9em;
+    }
+    
+    .calculation h2 {
+        padding: 0.3em 0;
+        font-size: 0.8rem;
+    }
+    
+    .calculation p {
+        font-size: 0.7rem;
+        font-family: var(--prgph);
+        font-weight: 600;
+        padding: 0.3em 0 0.6em 0;
+    }
+
+    footer {
+        font-size: 0.6em;
     }
   }
