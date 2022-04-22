@@ -2,6 +2,7 @@
 
 * { 
 	box-sizing: border-box;
+    margin: 0;
 }
 
 :root {
@@ -23,12 +24,12 @@ body {
     );
     background-repeat: no-repeat;
     background-size: auto;
-    height: 100vh;
+    background-attachment: fixed;
     padding: 1.7em 0;
 }
 
 #card {
-    width: 60%;
+    width: 33em;
     max-width: 600px;
     margin: auto;
     padding: 1em 0 0 0; 
@@ -46,7 +47,7 @@ body {
 }
 
 .insert h1 {
-    padding: 0.3em 0;
+    padding: 0.5em 0;
     text-transform: capitalize;
     font-size: 1.5rem;
     color: var(--white);
@@ -57,13 +58,13 @@ input[type=number] {
     background: var(--white);
     border-color: transparent;
     text-align: center;
-    padding: 0.3em 0.2em;
+    padding: 0.2em 0.2em;
     margin-bottom: 0.2em;
-    font-size: 4rem;
+    font-size: 3rem;
     outline: transparent;
     font-weight: 700;
     color: var(--text);
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
   }
 
@@ -75,20 +76,22 @@ input[type=number] {
 /* Conversion Section */
 .calculation {
     background-color: var(--white);
-    padding: 0.5em 1em;
+    padding: 1.5em 1em;
 }
 
 .calculation h2 {
-    padding: 0.5em 0;
+    padding: 0.8em 0 0.8em 0;
     font-size: 1.5rem;
     color: var(--text);
     font-family: var(--heading);
+    font-weight: 800;
 }
 
 .calculation p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: var(--prgph);
     font-weight: 600;
+    color: var(--text);
 }
 
 footer {
@@ -99,3 +102,40 @@ footer {
     font-weight: 800;
     font-size: 1.1em;
 }
+
+/* Responsiveness */
+
+/* @media only screen and (min-width: 577px)  {
+
+} */
+
+@media screen and (max-width: 576px) {
+    .insert h1 {
+        font-size: 1.1rem;
+    }
+
+    input[type=number] {
+        padding: 0.2em 0.3em;
+        width: 100%;
+    }
+    
+    #card {
+        width: 80%;
+    }
+
+    .calculation {
+        padding: 1.2em 1em;
+    }
+    
+    .calculation h2 {
+        padding: 0.4em 0;
+        font-size: 1rem;
+    }
+    
+    .calculation p {
+        font-size: 0.8rem;
+        font-family: var(--prgph);
+        font-weight: 600;
+        padding: 0.4em 0 0.6em 0;
+    }
+  }
